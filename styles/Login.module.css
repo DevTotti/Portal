@@ -1,0 +1,224 @@
+    
+.login {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.login .contentBx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          background-color: #fff;
+}
+
+.login .contentBx .formBx {
+  width: 50%;
+}
+
+.login .contentBx .formBx input::placeholder {
+  color: #607d8b;
+  font-weight: bolder;
+}
+
+.login .contentBx .formBx h2 {
+  color: #607d8b;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding-bottom: 7px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login .contentBx .formBx .inputBx {
+  margin-bottom: 20px;
+  position: relative;
+  border-bottom: 2px solid  #4267b2;
+}
+
+.login .contentBx .formBx .inputBx i {
+  color: #607d8b;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
+
+.login .contentBx .formBx .inputBx h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #a3bcca;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  position: relative;
+  top: 40px;
+  left: 40px;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.login .contentBx .formBx .inputBx input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 10px 20px;
+  padding-left: 2rem;
+  outline: none;
+  font-weight: 400;
+  border: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.65);
+  background: transparent;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.login .contentBx .formBx .inputBx input[type=submit] {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4267b2), color-stop(#4267b2), to(#4267b2));
+  background-image: linear-gradient(to right, #4267b2, #4267b2, #4267b2);
+  background-size: 200%;
+  border-radius: 30px;
+  margin-top: 20px;
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.login .contentBx .formBx .inputBx input[type=submit]:hover {
+  background-position: right;
+}
+
+
+
+.login .contentBx .formBx .inputBtn input[type=submit] {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4267b2), color-stop(#4267b2), to(#4267b2));
+  background-image: linear-gradient(to right, #4267b2, #4267b2, #4267b2);
+  background-size: 200%;
+  border-radius: 30px;
+  margin-top: 20px;
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.login .contentBx .formBx .inputBtn input[type=submit]:hover {
+  background-position: right;
+}
+
+.login .contentBx .formBx .focus {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.login .contentBx .formBx .focus i {
+  color: #35eb41;
+}
+
+.login .contentBx .formBx .focus h5 {
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  color: #607d8b83;
+}
+
+.login .contentBx .formBx .focus:after, .login .contentBx .formBx .focus:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 50%;
+  height: 2px;
+  /* background-color: #35eb41; */
+}
+
+.login .contentBx .formBx .focus:after {
+  right: 50%;
+}
+
+.login .contentBx .formBx .focus:before {
+  left: 50%;
+}
+
+.login .imgBx {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.login .imgBx img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.login .imgBx:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.link {
+  color: #607d8b;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.link a {
+  text-decoration: none;
+  color: #4267b2;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .login .imgBx {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+  }
+  .login .contentBx {
+    width: 100%;
+    z-index: 8;
+    position: relative;
+  }
+  .login .contentBx .formBx {
+    padding: 40px;
+    width: 90%;
+    border-radius: 20px;
+  }
+}

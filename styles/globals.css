@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.button__bar {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  padding: 0;
+  background: transparent;
+  border-radius: 40px;
+  width: auto;
+  text-align: center;
+  position: absolute;
+  right: 150px;
+  bottom: 50px;
+}
+
+.car_slide {
+  height: 100%;
+}
+
+.car_slide img{
+  width: 100% !important;
+}
+
+@media screen and (max-width: 768px) {
+  .button__bar {
+    bottom: 0;
+  }
+}
+
+.button__bar li {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 0;
+}
+
+.button__bar li button {
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  height: 16px;
+  width: 37px;
+}
+
+.button__bar li.slick-active button {
+  background-color: white;
+  width: 93px;
+  height: 16px;
+}
+
+.button__bar li button:hover {
+  background: rgba(255, 255, 255, 0.5);
+
+}
+
+.button__bar li button:focus {
+  outline: 0;
+}
+
+/* For merch  */
+
+.button__dot {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  padding: 0;
+  background: transparent;
+  border-radius: 40px;
+  width: auto;
+  text-align: center;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 10px;
+}
+
+.button__dot li {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 0;
+}
+
+.button__dot li button {
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.button__dot li.slick-active button {
+  background-color: white;
+}
+
+.button__dot li button:hover {
+  background: rgba(255, 255, 255, 0.5);
+
+}
+
+.button__dot li button:focus {
+  outline: 0;
+}
+
+.cart_container {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 60px;
+  top: 10px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  mix-blend-mode: difference;
+}
+
+.cart_content {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: orange;
+  position: absolute;
+  right: 2px;
+  bottom: 0px;
+  opacity: .9;
+}
+
+.cart_icon {
+  width: 100%;
+  height: 100%;
+}
+
+.payment {
+  height: 100%;
+}
+
+.nav__brand {
+  width: 100px;
+  height: 100px;
+  background-image: url('../assets/6.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  z-index: 999;
+  cursor: pointer;
+  display: none;
+  border-radius: 50%;
+}
+
+.cart_toast {
+  background-color: #708090;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 0;
+  /* display: none; */
+  align-items: center;
+  width: 150px;
+  height: 70px;
+
+}
+
+.nav__menu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+  .nav__menu {
+    display: block;
+    color: white;
+    position: absolute;
+    z-index: 900;
+    font-size: 30px;
+    top: 32px;
+    right: 32px;
+    text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .nav__brand {
+    display: block;
+  }
+
+  .side_pane {
+    display: block !important;
+  }
+}
+
+
+.sizes{
+  display: flex;
+  justify-content: space-between;
+  width: 130%;
+  margin-top: 20px;
+
+}
+
+@media screen and (max-width: 450px) {
+  .sizes {
+    width: 100%;
+  }
+}
+
+.sizes p{
+  cursor: pointer;
+  transition: all .2s ease-in;
+  font-weight: normal;
+
+}
+
+.sizes p:hover{
+  transform: scale(1.2);
+}
+
+p.active_size {
+  color: #0303aa;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom:3px solid #0303aa;
+}
+
+.footer {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.spinner_container {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgImage {
+  background-image: url('../assets/WALLPAPER.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  height: 100vh;
+  width: 100vw;
+}
+
+.side_pane {
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  display: none;
+  align-items: center;
+}
+
+.side_pane h4 {
+  color: white;
+  text-transform: uppercase;
+  /* background-color: red; */
+  text-align: center;
+  font-size: 25px;
+  transform: translateY(40px);
+
+}
+
+.slide {
+  width: 100%;
+}

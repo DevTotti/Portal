@@ -1,0 +1,303 @@
+.tabs {
+    padding: 80px;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('../assets/3\ 4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+  }
+  
+  .title {
+    margin: 20px auto;
+    width: 8rem;
+    max-width: 12rem;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .single_title {
+    width: 10rem;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    position: relative;
+    background-color: red;
+  }
+  
+  .title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .title .outline {
+    width: 50%;
+    height: 12px;
+    margin-left: 50%;
+    background-color: cyan;
+    position: absolute;
+    bottom: 0px;
+  }
+  
+  .event {
+    /* background-color: blue; */
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .event .btn_container {
+    width: auto;
+    /* background-color: #e5e5e5; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .event .btn_container .btn {
+    padding: 10px 20px;
+    width: 220px;
+    margin: 10px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #fff;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .event .btn_container .active {
+    color: #616161;
+    font-weight: bold;
+    background-color: #ccc;
+  }
+  
+  .event .btn_container .btn:hover {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ccc;
+  }
+  
+  .event .btn_container .btn:active {
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12);
+  }
+  
+  .event .main_content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: red; */
+  }
+  
+   .single_event {
+    background-color: rgba(217, 219, 219, 0.88);
+    color: black;
+    padding: 5px 15px;
+    height: 100px;
+    box-sizing: border-box;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    margin: 20px 30px;
+    font-weight: bold;
+  }
+
+  .single_event p{
+    margin-top: 8px;
+    font-size: 15px;
+  }
+
+  .single_event h2{
+    font-size: 1.19rem;
+  }
+  
+  .link_btn {
+    border: none;
+    padding: 5px 10px;
+    max-width: 120px;
+    background-color:  rgba(66, 103, 178, 0.5);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    margin-bottom: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .link_btn:hover {
+    background-color: #009dd6;
+    color: white;
+    transform: scale(1.09);
+  }
+  
+  .link_btn a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .single_event:hover {
+  
+  }
+  .event .main_content .lead {
+    /* background-color: red; */
+    /* width: 70vw; */
+    position: relative;
+    padding: 0 20px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .event .main_content .lead h3 {
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .event .main_content .lead .time {
+    font-style:italic ;
+  }
+  
+  .event .main_content .lead .outline {
+    width: 30%;
+    height: 12px;
+    margin-left: 50%;
+    background-color: cyan;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .event .main_content .carousel {
+    /* background-color: purple; */
+    width: 100%;
+    height: 400px;
+  }
+  
+  .event .main_content .desc {
+    background-color: orange;
+    margin-top: 50px;
+  }
+  
+  .event .main_content .video {
+    background-color: cyan;
+    width: 100%;
+    height: 400px;
+    margin: 50px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .event {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .event .btn_container {
+      width: 100%;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+    }
+    .event .btn_container .btn {
+      padding: 10px 30px;
+      margin: 10px 0;
+      width: 250px;
+      font-weight: bold;
+      background: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      /* background-color: #fff; */
+    }
+
+    .event .btn_container .active{
+      color: #616161 !important;
+      background-color: #ccc;
+    }
+
+    .link_btn {
+      align-self: flex-end;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .main_content .single_event {
+      width: 100% !important;
+    }
+
+    .event_list {
+    }
+
+    .event .main_content {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+  }
+  
+  @media screen and (max-width: 460px) {
+
+    .main_content .video {
+      display: none;
+    }
+    .main_content .lead .outline {
+      display: none !important;
+    }
+    .event .btn_container .btn {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .tabs {
+      padding: 50px 30px;
+    }
+    .video {
+      display: none !important;
+    }
+    .event .main_content .lead {
+      /* background-color: red; */
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .loading {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

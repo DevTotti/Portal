@@ -1,0 +1,77 @@
+.success_body {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    background-image: url('../assets/success1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: darken;
+}
+
+
+
+.icon {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: green;
+    transform: translate(50%, -30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success_card {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 580px) {
+    .success_card {
+        width: 100%;
+        margin: 0 20px;
+    }
+}
+
+.success_card p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.success_tag {
+    margin-top: 90px;
+    font-size: 40px;
+    color: green;
+}
+
+.success_card a{
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;   
+    transition: all .1s ease-in;
+}
+
+.success_card a:hover{
+    color: green;
+    text-decoration: underline;
+}

@@ -1,0 +1,114 @@
+.menu_container {
+    height: 100vh;
+    background-color: #0a0a0a;
+    position: absolute;
+    top: -200%;
+    opacity: 0;
+    right: 0;
+    z-index: 991;
+    max-width: 500px;
+    width: 100vw;
+    color: cyan;
+    font-weight: bold;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    transition: all .4s ease-in;
+}
+
+.side__bar {
+    top: 0;
+    opacity: 1;
+  }
+
+.cancel__icon {
+    position: absolute;
+    z-index: 995;
+    /* background-color: #fff; */
+    color: white !important;
+    font-size: 30px;
+    top: 50px;
+    right: 60px;
+}
+
+.menu_container ul{
+    position: relative;
+    width: 100%;
+    z-index: 995;
+    list-style: none;
+    font-size: 25px;
+}
+
+.menu_container ul li{ 
+    color: black;
+    margin: 25px 0;
+    display: flex;
+    width: 100%;
+    /* background-color: yellow; */
+    justify-content:  center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+
+.menu_container ul li.login {
+    border-bottom: none;
+    color: #4267b2;
+
+}
+
+.menu_container ul li.login span:first-of-type{
+    /* margin-left: -170px; */
+    color: aliceblue;
+    margin-right: 10px;
+}
+
+.menu_container ul li.login span:nth-of-type(2){
+    /* margin-left: -170px; */
+    /* color: aliceblue; */
+    margin-left: 10px;
+}
+
+.menu_container ul li.login a{
+    color: #4267b2;
+}
+
+.menu_container ul li a{ 
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+.menu_container ul li a:hover{ 
+    color: cyan;
+}
+
+/* .menu_container:before {
+    content: '';
+    width: 100%;
+    height: 1500px;
+    background-color: #0303aa;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 75%);
+} */
+
+
+@media screen and (max-width: 435px){
+    .menu_container:before {
+        clip-path: none;
+    }
+
+    .menu_container {
+        align-items: center;
+    }
+}
+
+
+

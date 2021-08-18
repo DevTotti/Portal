@@ -1,0 +1,35 @@
+{
+  "name": "car-portal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.1",
+    "axios": "^0.21.1",
+    "flutterwave-react-v3": "^1.0.10",
+    "isomorphic-unfetch": "^3.1.0",
+    "js-cookie": "^2.2.1",
+    "next": "11.0.1",
+    "nprogress": "^0.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "react-jwt": "^1.1.2",
+    "react-slick": "^0.28.1",
+    "react-spinners-kit": "^1.9.1",
+    "slick-carousel": "^1.8.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "7.30.0",
+    "eslint-config-next": "11.0.1"
+  }
+}

@@ -1,0 +1,331 @@
+.merch_container {
+    max-width: 1650px;
+    height: 800px;
+    background-color: #f5f5f5;
+    padding: 70px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url('../assets/storebg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 888px) {
+    .merch_container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+
+    .merch_container .main_section{
+      width: 100%;
+    }
+
+    .merch_container .billing_info{ 
+      width: 100% !important;
+      margin: 30px 0 !important;
+      justify-self: flex-start;
+    }
+
+    .merch_container .main_section .main_info {
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+
+    .merch_container .main_section .main_info .section_text {
+      margin-left: 0 !important;
+    }
+  }
+  
+  .merch_container .main_section {
+    background-color: #e5e5e5;
+    height: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-radius: 30px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .merch_container .main_section .main_info {
+    background-color: #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .merch_container .main_section .main_info .img_container {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+  }
+  @media screen and (max-width: 450px) {
+    .merch_container .main_section .main_info .img_container {
+      background-color: transparent;
+      width: 100%;
+    }
+  }
+  
+  .merch_container .main_section .main_info .img_container img {
+    width: 100%;
+  }
+  
+  .merch_container .main_section .main_info .section_text {
+    background-color: transparent;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 40px;
+    padding: 20px;
+  }
+  
+  .merch_container .main_section .main_info .section_text h4 {
+    color: black;
+    font-size: 30px;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+  
+  .merch_container .main_section .main_info .section_text .cart_btn {
+    background-image: -webkit-gradient(linear, left top, right top, from(#0303aa), color-stop(#00006b), to(#000042));
+    background-image: linear-gradient(to right, #0303aa, #00006b, #000042);
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+
+  .merch_container .main_section .main_info .section_text .cart_btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+  
+  .merch_container .main_section .main_info .section_text .cart_btn:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+
+  .merch_container .main_section .main_info .section_text .cart_btn:focus {
+    outline: none;
+  }
+  
+  .merch_container .main_section .main_info .section_text .section_price {
+    border-bottom: 2px solid #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    min-height: 150px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* margin-top: -30px; */
+  }
+  
+  .merch_container .main_section .main_info .section_text .section_price .price_variation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    line-height: 12px;
+    max-width: 150px;
+    background-color: transparent;
+  }
+  
+  .merch_container .main_section .main_info .section_text .section_price .price_variation .perc {
+    margin-left: 20px;
+    background-color: rgba(255, 0, 0, 0.527);
+    padding: 5px;
+    border-radius: 7px;
+    font-weight: bold;
+  }
+  
+  .merch_container .main_section .main_info .section_text .section_price .price_variation p {
+    font-size: 20px;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.582);
+  }
+  
+  .merch_container .main_section .main_info .section_text .section_price .actual_price {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    background-color: transparent;
+  }
+  
+  .merch_container .main_section .main_info .section_text .section_price .variations {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .merch_container .desc h4 {
+    font-size: 25px;
+    /* font-style: italic; */
+  }
+  
+  .merch_container .desc p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .merch_container .billing_info {
+    background-color: #e5e5e5;
+    width: 35vw;
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+    border-radius: 30px;
+    margin-left: 30px;
+  }
+  
+  .merch_container .billing_info .headline {
+    font-size: 30px;
+    border-bottom: 3px solid #DDD;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    /* font-style: italic; */
+  }
+  
+  .merch_container .billing_info .billing_text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .merch_container .billing_info .delivery_locale h2 {
+    border-bottom: 3px solid #DDD;
+    padding-bottom: 18px;
+    font-size: 30px;
+    /* font-style: italic; */
+  }
+  
+  .merch_container .billing_info .delivery_locale ul {
+    list-style: none;
+    /* padding-bottom: 30px; */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #DDD;
+  }
+  
+  .merch_container .billing_info .delivery_locale li {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  .merch_container .billing_info .time_policy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;          
+  justify-content: space-between;
+  border-bottom: 3px solid #DDD;
+    padding-bottom: 30px;
+  }
+  
+  
+  .merch_container .billing_info .time_policy p {
+    font-size: 18px;
+    margin-left: 50px;
+  }
+  
+  .merch_container .billing_info .time_policy p span {
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .merch_container .billing_info .return_policy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+  }
+  
+  .merch_container .billing_info .return_policy img {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+  }
+  
+  .merch_container .billing_info .return_policy p {
+    font-size: 18px;
+    margin-left: 50px;
+  }
+  
+  .merch_container .billing_info .return_policy p span {
+    font-weight: bold;
+    font-style: italic;
+  }
+.active {
+    color: black;
+    font-weight: bolder;
+}
+
+.inactive {
+    font-style: italic;
+    font-size: 14px !important;
+    color: rgb(88, 88, 88);
+}
+
+.cart_container {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 60px;
+  top: 100px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  mix-blend-mode: difference;
+  z-index: 19;
+}
+
+.billing_text input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.billing_text input::placeholder {
+  color: #c0c0c0;
+}
+
+.billing_text input:focus {
+  border-bottom:3px solid #0303aa;
+  outline: none;
+}

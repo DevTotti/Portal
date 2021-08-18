@@ -1,0 +1,24 @@
+.toast_body {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 120px;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000;
+}
+
+.toast_body h2{
+  color: white;
+}
+.toast_body p{
+  color: white;
+}

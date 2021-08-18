@@ -1,0 +1,425 @@
+.home {
+  background-image: url("../public/assets/chris-coe-ajLMKyxnOGM-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+@media screen and (max-width: 450px) {
+  .home {
+    padding: 0;
+  }
+}
+.headline {
+}
+
+.home .login {
+  border: 2px solid cyan;
+  margin-left: 5px;
+  border-radius: 30px;
+  width: 8rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: cyan;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  
+}
+
+.home .login:hover {
+  background-color: cyan;
+  color: #000;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.home .login a {
+  color: inherit;
+  font-weight: bold;
+}
+
+.home .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.home .content {
+  color: white;
+  position: relative;
+  z-index: 5;
+  max-width: 60vw;
+  padding: 50px;
+  width: 90%;
+  margin-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.home .content h1 {
+  font-size: 4rem;
+}
+
+.home .content h3 {
+  font-size: 2rem;
+}
+
+.home .content p {
+  font-size: 1.3rem;
+  font-family: 'Nunito', 'sans-serif';
+  margin: 20px 0;
+}
+
+.home a {
+  color: #FFF;
+  font-size: 14px;
+  text-decoration: none;
+  width: 8rem;
+  height: 2.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 15px .8rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-weight: bolder;
+  border: 2px solid white;
+}
+
+.home a:hover { 
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-color: #FFF;
+    color: #000;
+}
+
+
+.home .navs {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.home .nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.home .social {
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 5px;
+  height: 40px;
+  width: 40px;
+  color: inherit;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.home .social:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: #FFF;
+  color: #000;
+}
+
+.home .btn_link {
+  border: 2px solid #FFF;
+  width: 8rem;
+  height: 2.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 15px .8rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-weight: bolder;
+}
+
+.home .btn_link a {
+
+}
+
+.home .btn_link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: #FFF;
+  color: #000;
+}
+
+@media screen and (max-width: 1330px) {
+  .social_links {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1191px) {
+  .nav__links {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+  .home {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .nav__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+  }
+  .home .content {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .nav__links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 777px) {
+  .content {
+    margin-bottom: 0 !important;
+  }
+  .nav__links {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .nav__links {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .home .content {
+    color: white;
+    position: relative;
+    z-index: 5;
+    max-width: 95vw;
+    /* background-color: blue; */
+    padding: 0;
+    width: 90%;
+    margin-bottom: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .home .content h1 {
+    font-size: 3.1rem;
+  }
+  .home .content h3 {
+    font-size: 1.7rem;
+  }
+  .home .content p {
+    font-size: 1.25rem;
+  }
+  .home .nav__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .home .social {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 15px 5px;
+    height: 40px;
+    width: 40px;
+    color: inherit;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .home .social:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-color: #FFF;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 512px) { 
+  .home a {
+    width: 100%;
+  } 
+
+  .home .login {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .home .content {
+    color: white;
+    position: relative;
+    z-index: 5;
+    max-width: 90vw;
+    width: 90%;
+    margin-top: -50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .home .content h1 {
+    font-size: 2.7rem;
+    font-weight: bolder;
+  }
+  .home .content h3 {
+    font-size: 1.3rem;
+  }
+  .home .content p {
+    font-size: 1.1rem;
+  }
+  .home .btn-link {
+    width: 100%;
+    cursor: pointer;
+    margin: 5px .8rem;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .content {
+    width: 100vw !important;
+  }
+  .content h1 {
+    font-size: 1.7rem !important;
+  }
+  .content h3 {
+    font-size: .9rem !important;
+    margin-top: -18px !important;
+  }
+  .content p {
+    font-size: 1.1rem;
+  }
+
+  .home .headline {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .home .content p {
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+  .home .nav__links {
+    padding: 0;
+  }
+  .headline h3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 210px) {
+  
+
+  .headline h1 {
+    font-size: 3px;
+  }
+}
