@@ -34,7 +34,8 @@ function Inspection({toggle, id}) {
             let info = {
                 car: id, name, email, phone
             }
-            let res = await axios.post("http://thecarportal.herokuapp.com/automart/inspection/", info)
+            let res = await axios.post("https://thecarportal.herokuapp.com/automart/inspection/", info)
+            console.log(res);
             setResponse("Your Inspection was created successfully")
         } catch (error) {
             setResponse("An Error Occured, please check internet connection and try again later")
